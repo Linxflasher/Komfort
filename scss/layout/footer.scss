@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Footer Area
+   ========================================================================== */
+
+.footer-bg {
+    background:url("#{$img-path}/footer1.png") 50% 100% no-repeat;
+}
+
+.comfort-text {
+    @extend .appetite-stack;
+	@include text-style(#688600, 30px, normal);
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    margin:40px 0;
+}
+
+.nav-footer {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 950px;
+	> ul {
+		list-style: none;
+		position: absolute;
+		top: -22px;
+		> li {
+			display: inline-block;
+			> a {
+				@extend .tahoma-stack;
+				@include text-style(#FFF, 20px, normal);
+				text-shadow: 0 1px 2px rgba(0,0,0,.75); /* drop shadow */
+				text-decoration: none;
+				display: inline-block;
+				vertical-align: top;
+				text-align: center;
+				text-transform: uppercase;
+				height: 83px;
+				padding: 25px 20px 0 20px;
+				width: 186px;
+				&:hover {
+					border-radius: 10px 10px 0 0; /* border radius */
+					background: #88ce00;
+					background-clip: padding-box; /* prevents bg color from leaking outside the border */
+					background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4ODkwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzg4Y2UwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+); /* layer fill content */ /* layer fill content */ /* layer fill content */
+					background-image: -webkit-linear-gradient(bottom, #588900 0%, #88ce00 100%); /* layer fill content */
+					background-image: linear-gradient(bottom, #588900 0%, #88ce00 100%); /* layer fill content */
+				}
+			}
+		}
+	}
+}
+
+
+.nav-footer > ul > li:hover ul {
+    visibility: visible;
+	z-index: 100;
+}
+
+.footer-logo-link {
+    display: block;
+    background: url("#{$img-path}/logo.png") 0 0 no-repeat;
+    height: 150px;
+    width: 243px;
+    margin-top: 70px;
+}
+
+
+.footer-address {
+    margin-left: 124px;
+    margin-top: 130px;
+    @extend .heliosbold-stack;
+	@include text-style(#6c3518, 20px, normal);
+    text-align: right;
+}
+
+.footer-address a {
+    font-size: 18px;
+    color: #6c3518;
+}

@@ -1,0 +1,27 @@
+
+$img-path: "../img";
+$fonts-path: "../fonts";
+
+
+.tahoma-stack {
+	font-family: Tahoma, sans-serif;
+}
+
+.helios-stack {
+	font-family: "Helios", sans-serif;
+}
+
+.heliosbold-stack {
+	font-family: "HeliosBold", sans-serif;
+}
+
+.appetite-stack {
+	font-family: "Appetite", sans-serif;
+}
+
+
+@mixin text-style($color, $font-size, $font-weight) {
+	color: $color;
+	font-size: $font-size;
+    font-weight: $font-weight;
+}

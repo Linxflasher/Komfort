@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <title>Оставить отзыв</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/tinycarousel.css">
+        <link rel="stylesheet" href="css/fancybox.css" media="screen" />
+        <link rel="stylesheet" href="http://www.gismeteo.ru/static/css/informer2/gs_informerClient.min.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+      
+	
+    </head>
+    <body>
+    
+    <!-- Форма заявки на вызов специалиста  -->
+    
+    
+    <div class="specialist-call-form-bg" id="form3" style="display:none;">
+           
+           <img src="img/specialist-call-img.jpg" alt="">
+           
+           <h1 class="form-heading">заявка на выезд специалиста ан “комфорт”</h1>
+           
+           <form class="form-block" action="mailer.php" method="get">
+               
+              
+                   <label class="form-label" for="name">Ваше Имя:</label>
+                   <input class="form-input" type="text" name="name" id="name" size="25" value="">
+               
+               
+               
+                   <label class="form-label" for="tel">Телефон:</label>
+                   <input class="form-input" type="text" name="tel" id="tel" size="25" value="">
+              
+               <div>
+                   <label class="form-label" for="email">Email:</label>
+                   <input class="form-input" type="text" name="email" id="email" size="25" value="">
+               </div>
+               
+               <div>
+                   <label class="form-label" for="offer">Вид сделки:</label>
+                   <select class="form-input" name="offer" id="offer">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+               </div>
+                
+                <div>
+                    <label class="form-label" for="offer">Объект недвижимости:</label>
+                    <select class="form-input" name="object">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="form-label" for="message">Описание заявки:</label>
+                    <textarea class="form-textarea" name="message" id="message" cols="25" rows="5"></textarea>
+                </div>
+                
+                <div>
+                    <label class="form-label" for="date">Дата выезда:</label>
+                    <input class="form-input" type="text" name="date" id="date" size="25" value="">
+                </div>
+                
+                <div>
+                    <label class="form-label" for="time">Время осмотра объекта:</label>
+                    <input class="form-input" type="text" name="time" id="time" size="25" value="">
+                </div>
+                
+                <input class="form-send-btn" type="button" name="button" value="Отправить">
+               
+           </form>
+           
+       </div>
+    
+    
+    
+    
+    
+     <!-- Форма заявки на услугу  -->
+    
+    
+    <div class="specialist-call-form-bg" id="form2" style="display:none;">
+           
+           <img src="img/service-call-img.jpg" alt="">
+           
+           <h1 class="form-heading">заявка на услуги ан “комфорт”</h1>
+           
+           <form class="form-block" action="mailer.php" method="get">
+               
+              
+                   <label class="form-label" for="name">Ваше Имя:</label>
+                   <input class="form-input" type="text" name="name" size="25" value="">
+               
+               
+               
+                   <label class="form-label" for="tel">Телефон:</label>
+                   <input class="form-input" type="text" name="tel" size="25" value="">
+              
+               <div>
+                   <label class="form-label" for="email">Email:</label>
+                   <input class="form-input" type="text" name="email" size="25" value="">
+               </div>
+               
+               <div>
+                   <label class="form-label" for="offer">Вид сделки:</label>
+                   <select class="form-input" name="offer">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+               </div>
+                
+                <div>
+                    <label class="form-label" for="offer">Объект недвижимости:</label>
+                    <select class="form-input" name="object">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="form-label" for="message">Описание заявки:</label>
+                    <textarea class="form-textarea" name="message" cols="25" rows="5"></textarea>
+                </div>
+                
+                    
+                <input class="form-send-btn" type="button" name="button" value="Отправить">
+               
+           </form>
+           
+       </div>
+    
+    
+    
+    
+    
+    
+    <!-- Форма заявки - простой звонок  -->
+    
+    
+    <div class="specialist-call-form-bg" id="form" style="display:none;">
+           
+           <img src="img/call-me-img.jpg" alt="">
+           
+           <h1 class="form-heading">Перезвоните мне</h1>
+           
+           <form class="form-block" action="mailer.php" method="get">
+               
+              
+                   <label class="form-label" for="name">Ваше Имя:</label>
+                   <input class="form-input" type="text" name="name" size="25" value="">
+               
+               
+               
+                   <label class="form-label" for="tel">Телефон:</label>
+                   <input class="form-input" type="text" name="tel" size="25" value="">
+              
+               <div>
+                   <label class="form-label" for="email">Email:</label>
+                   <input class="form-input" type="text" name="email" size="25" value="">
+               </div>
+               
+               <div>
+                   <label class="form-label" for="offer">Вид сделки:</label>
+                   <select class="form-input" name="offer">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+               </div>
+                
+                <div>
+                    <label class="form-label" for="offer">Объект недвижимости:</label>
+                    <select class="form-input" name="object">
+                        <option value="option1">выбор</option>
+                        <option value="option2">выбор 2</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="form-label" for="message">Описание заявки:</label>
+                    <textarea class="form-textarea" name="message" cols="25" rows="5"></textarea>
+                </div>
+                
+                    
+                <input class="form-send-btn" type="button" name="button" value="Отправить">
+               
+           </form>
+           
+       </div>
+    
+    
+    
+    
+    <div class="header-bg">
+    <div class="footer-bg">
+    
+    <div class="wrapper">
+           
+       <div class="header">            
+            
+            <div class="header-logo left">
+                
+                <a class="header-logo-link" href="/"></a>
+                
+            </div>
+            <div class="header-social left">
+                
+                <ul>
+                    <li><a class="header-social-link" href="https://vk.com/club76640435" target="_blank"><img src="img/vk.png" alt=""></a></li>
+                    <li><a class="header-social-link" href="http://www.odnoklassniki.ru/group/52349365256368" target="_blank"><img src="img/odn.png" alt=""></a></li>
+                    <li><a class="header-social-link" href="https://www.facebook.com/groups/1453993278222891/" target="_blank"><img src="img/fb.png" alt=""></a></li>
+                </ul>
+                
+            </div>
+            <div class="header-address left">
+                
+                г. Орел, ул. Тургенева, д. 19<br/>
+                тел. 76-15-15, 8-953-818-44-22<br/>
+                <a href="img/map.jpg" class="fancybox">подробнее</a>
+                
+            </div>
+            <div class="clearfix"></div>
+            
+       </div>  
+       
+            
+        <div class="nav">
+            
+            <ul class="dropdown">
+                <li><a href="index.html" class="link-nedvij">Каталог<br/> недвижимости</a></li>
+                <li><a href="service.html" class="link-service">Услуги</a></li>
+                <li><a href="" class="link-partners">Партнеры</a></li>
+                <li><a href="leave-feedback.html" class="link-call">Оставить заявку</a></li>
+                <li><a href="" class="link-about">О нас</a>
+                
+                <ul class="dropdown-second">
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="feedback.html">Отзывы</a></li>
+                    <li><a href="promo.html">Акции</a></li>
+                </ul>
+                
+                </li>
+            </ul>
+            <div class="nav-orange-bg">
+               
+                
+            </div>
+            
+            <div class="nav-green-border"></div>
+            
+        </div>         
+             
+    <div class="content">
+       
+       
+       
+       
+       
+        
+        <div class="lreport-container">
+            <blockquote>
+            Богатство измеряется не в деньгах, богатство измеряется временем.<br/>
+            Роберт Кийосаки
+            </blockquote>
+            
+            <p>В современном мире основной проблемой является катастрофическая нехватка времени.</p>
+            <p>Время - необратимо. Его нельзя накопить, умножить или передать. Оно проходит безвозвратно.</p>
+            <p>Одной из основных целей деятельности Агентства недвижимости "КОМФОРТ" является создание <span class="green-text">максимально комфортных</span> условий для наших клиентов.</p>
+            <p>Если Вы желаете <span class="orange-text">воспользоваться услугами нашего агентства</span>,  но по тем или иным причинам нет возможности приехать к нам в офис или даже позвонить, то мы предлагаем Вам воспользоваться одним из следующих видов обратной связи:</p>
+            
+            
+            <div class="calls-report">
+                
+                <ul>
+                    <li>заказать обратный звонок <a href="#form" class="fancybox"><img class="backcall right" src="img/backcall.png" alt="" /></a></li>
+                    <li>оставить заявку <a href="#form2" class="fancybox"><img class="service-call right" src="img/service-call.png" alt="" /></a></li>
+                    <li>заказать выезд специалиста <a href="#form3" class="fancybox"><img class="specialist-call right" src="img/specialist-call.png"  alt="" /></a></li>
+                    
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            
+            <p>Выезд специалиста является бесплатной услугой.<br/>
+            <b style="padding-left:30px;">Наш эксперт по  недвижимости:</b></p> 
+            <ul class="green-bullets">
+            <li>приедет в удобное для Вас время,</li> 
+            <li>представит  Вам анализ  текущего состояния рынка недвижимости,</li> 
+            <li>разъяснит все условия проведения сделки,</li> 
+            <li>даст квалифицированную оценку рыночной стоимости Вашей недвижимости,</li>
+            <li>сфотографирует объект для дальнейшего размещения рекламы,</li> 
+            <li>поделится секретами предпродажной подготовки объекта.</li>
+            </ul>
+
+            <p>Экономьте свое время вместе с нами, получайте качественную и профессиональную услугу в максимально короткие сроки, в условиях абсолютного комфорта!</p>
+
+            
+        </div>
+               
+                
+    </div>         
+          
+          <div class="footer">
+              <div class="comfort-text">ВАШ КОМФОРТ – НАША РАБОТА!</div>
+               
+                 <div class="nav-footer">
+                
+                    <ul class="dropdown">
+                        <li><a href="index.html" class="link-nedvij">Каталог<br/> недвижимости</a></li>
+                        <li><a href="service.html" class="link-service">Услуги</a></li>
+                        <li><a href="" class="link-partners">Партнеры</a></li>
+                        <li><a href="leave-feedback.html" class="link-call">Оставить заявку</a></li>
+                        <li><a href="" class="link-about">О нас</a>
+
+                        <ul class="dropdown-second">
+                            <li><a href="contact.html">Контакты</a></li>
+                            <li><a href="feedback.html">Отзывы</a></li>
+                            <li><a href="promo.html">Акции</a></li>
+                        </ul>
+
+                        </li>
+                    </ul>
+                    <div class="nav-orange-bg">
+              
+              
+                    </div>
+              
+                    <div class="nav-green-border"></div>
+                    
+                    <div class="footer-logo left">
+                
+                        <a class="footer-logo-link" href="/"></a>
+
+                    </div>
+                    <div class="footer-address right">
+
+                        г. Орел, ул. Тургенева, д. 19<br/>
+                        тел. 76-15-15, 8-953-818-44-22<br/>
+                        <a href="img/map.jpg" class="fancybox">подробнее</a>
+
+                    </div>
+                    <div class="clearfix"></div>
+              
+                </div>  
+            </div>
+        
+    </div> 
+       
+        </div> 
+    </div>
+        
+        
+        
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/fancybox.js"></script>
+        <script src="js/mousewheel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $('.fancybox').fancybox();
+            });
+        </script>
+                
+        
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+             $(window).load(function() {
+                  $('.flexslider').flexslider({
+                    animation: "slide"
+                  });
+                });        
+        </script>
+        <script type="text/javascript" src="js/tinycarousel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $('#slider1').tinycarousel();
+            });
+        </script>
+        
+
+       
+    </body>
+</html>

@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+
+
+
+@font-face{ 
+	font-family: 'Appetite';
+	src: url('#{$fonts-path}/appetite-italic.eot');
+	src: url('#{$fonts-path}/appetite-italic.eot?#iefix') format('embedded-opentype'),
+	     url('#{$fonts-path}/appetite-italic.woff') format('woff'),
+	     url('#{$fonts-path}/appetite-italic.ttf') format('truetype'),
+	     url('#{$fonts-path}/appetite-italic.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'HeliosBold';
+	src: url('#{$fonts-path}/heliosbold.eot');
+	src: url('#{$fonts-path}/heliosbold.eot?#iefix') format('embedded-opentype'),
+	     url('#{$fonts-path}/heliosbold.woff') format('woff'),
+	     url('#{$fonts-path}/heliosbold.ttf') format('truetype'),
+	     url('#{$fonts-path}/heliosbold.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Helios';
+	src: url('#{$fonts-path}/helioscond.eot');
+	src: url('#{$fonts-path}/helioscond.eot?#iefix') format('embedded-opentype'),
+	     url('#{$fonts-path}/helioscond.woff') format('woff'),
+	     url('#{$fonts-path}/helioscond.ttf') format('truetype'),
+	     url('#{$fonts-path}/helioscond.svg#webfont') format('svg');
+}
+
+
+
+
+
+/* ==========================================================================
+   Boilerplate styles
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+   
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.center {
+     text-align: center;   
+}
+
+.left {
+     float: left;
+}
+
+.right {
+     float: right;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Common Styles
+   ========================================================================== */
+
+
+/*   Позволяет включить контент, внутренние отступы и границы в элемент    */
+
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: #5e9100; /* text color */
+    @extend .tahoma-stack;
+    font-size: 18px;
+}
+
+h2 {
+	@extend .tahoma-stack;
+	@include text-style(#000, 18px, normal);
+}
+
+
+p {
+    color: #000; /* text color */
+    @extend .tahoma-stack;
+    font-size: 18px;
+}
+
+ul {
+    @extend .tahoma-stack;
+    @include text-style(#000, 16px, normal);
+    line-height: 24px;
+}
+
+
+.header-bg {
+    background:url("#{$img-path}/header1.png") 50% 0 no-repeat;
+}
+
+
+.wrapper {
+    width: 950px;
+    margin: 0 auto;
+}
